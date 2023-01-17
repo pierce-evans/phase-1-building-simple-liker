@@ -4,8 +4,17 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-
-
+document.getElementById('modal').classList.add('hidden');
+  function handleLike(EMPTY_HEART, FULL_HEART) {
+    mimicServerCall();
+    if(document.getElementsByClassName("like-glyph").textContent = EMPTY_HEART) {
+      return document.getElementsByClassName("like-glyph").addEventListener('click', () =>  FULL_HEART)
+    }
+    else if(document.getElementsByClassName("like-glyph") == FULL_HEART) {
+      return document.getElementsByClassName("like-glyph").addEventListener('click', () => EMPTY_HEART)
+    }
+  }
+  handleLike()
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
